@@ -1,1 +1,1 @@
-# https://qwertymd.github.io
+qwertymd.github.io

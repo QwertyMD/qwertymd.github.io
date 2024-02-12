@@ -32,16 +32,7 @@
       animation: scale-in 1s ease-out;
     }
 
-    .p1 {
-      color: #25a5be;
-      font-size: 24px;
-      margin-bottom: 20px;
-      font-style: italic;
-      font-weight: bold;
-      animation: scale-in 1s ease-out;
-    }
-
-    .p2 {
+    .quote {
       color: #2587be;
       font-size: 24px;
       margin-bottom: 40px;
@@ -49,61 +40,23 @@
       animation: slide-in 1s ease-out;
     }
 
-    .video-container {
-      position: relative;
-      padding-bottom: 28.125%;
-      padding-top: 30px;
-      height: 0;
-      overflow: hidden;
-      margin-top: 40px;
-      animation: fade-in 1s ease-out;
-    }
-
-    .video-container img {
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-    }
-
-    .contact {
-      position: absolute;
-      top: 20px;
-      animation: fade-in 1s ease-out;
-    }
-
-    .contact-left {
-      left: 20px;
-    }
-
-    .contact-right {
-      right: 20px;
-    }
-
-    .contact a {
+    .btn-click-me {
+      background-color: #50c0e9;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
       display: inline-block;
-      margin-top: 10px;
-      margin-left: 10px;
-      padding: 10px;
-      border: 1px solid #50c0e9;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
       border-radius: 5px;
       transition: all 0.3s ease;
-      text-decoration: none;
-      color: #50c0e9;
     }
 
-    .contact a:first-child {
-      margin-left: 0;
-    }
-
-    .contact a:hover {
-      transform: scale(1.2);
+    .btn-click-me:hover {
+      background-color: #2596be;
     }
 
     @keyframes fade-in {
@@ -136,19 +89,16 @@
 </head>
 <body>
   <div class="container">
-    <div class="contact contact-left">
-      <a class="link" href="https://www.facebook.com/profile.php?id=100004187504968" target="_blank">Facebook</a>
-    </div>
-    <div class="contact contact-right">
-      <a class="link" href="https://github.com/QwertyMD" target="_blank">Github</a>
-    </div>
     <h1>Hey There 👋</h1>
-    <h1>I'm Aaryan Dhakal</h1>
-    <p class="p1">Currently a high school student with deep interest in Computers.</p>
-    <p class="p2">"If you're always trying to be normal you'll never know how amazing you can be."</p>
-    <div class="video-container">
-      <img src="https://media.tenor.com/x8v1oNUOmg4AAAAC/rickroll-roll.gif" alt="Rickroll GIF">
-    </div>
+    <p class="quote">"If you're always trying to be normal you'll never know how amazing you can be."</p>
+    <button class="btn-click-me" onclick="showPrompt()">Click Me</button>
   </div>
+
+  <script>
+    function showPrompt() {
+      var message = "Hello world";
+      prompt(message);
+    }
+  </script>
 </body>
 </html>

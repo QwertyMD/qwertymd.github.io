@@ -5,7 +5,7 @@
   <link rel="shortcut icon" type="image/png" href="https://avatarfiles.alphacoders.com/152/152286.jpg">
   <style>
     body {
-      background-color: #00238c;
+      background-color: #2e428c;
       background-image: url("https://www.transparenttextures.com/patterns/gray-floral.png");
       color: #2a90b3;
       font-family: Arial, sans-serif;
@@ -88,6 +88,39 @@
       font-size: 20px;
     }
 
+    .contact {
+      position: absolute;
+      top: 20px;
+    }
+
+    .contact-left {
+      left: 20px;
+    }
+
+    .contact-right {
+      right: 20px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 10px;
+      margin-left: 10px;
+      padding: 10px;
+      border: 1px solid #50c0e9;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: #50c0e9;
+    }
+
+    .contact a:first-child {
+      margin-left: 0;
+    }
+
+    .contact a:hover {
+      transform: scale(1.2);
+    }
+
     @keyframes fade-in {
       from {
         opacity: 0;
@@ -118,12 +151,18 @@
 </head>
 <body>
   <div class="container">
+    <div class="contact contact-left">
+      <a class="link" href="https://www.facebook.com/profile.php?id=100004187504968" target="_blank">Facebook</a>
+    </div>
+    <div class="contact contact-right">
+      <a class="link" href="https://github.com/QwertyMD" target="_blank">Github</a>
+    </div>
     <h1>Hey There 👋</h1>
     <p class="quote">"If you're always trying to be normal you'll never know how amazing you can be."</p>
     <button class="btn-click-me" onclick="togglePopup()">Click Me</button>
     <div id="popup" class="popup">
       <span class="close" onclick="togglePopup()">X</span>
-      <p>Hello world</p>
+      <p>All I ever wanted to say was:</p>
     </div>
   </div>
 

@@ -5,8 +5,8 @@
   <link rel="shortcut icon" type="image/png" href="https://avatarfiles.alphacoders.com/152/152286.jpg">
   <style>
     body {
-      background-color: #4a588c;
-      background-image: url("https://www.transparenttextures.com/patterns/wild-flowers.png");
+      background-color: #49588c;
+      background-image: url("https://www.transparenttextures.com/patterns/gray-floral.png");
       color: #2a90b3;
       font-family: Arial, sans-serif;
       font-size: 18px;
@@ -64,16 +64,17 @@
     .popup {
       display: none;
       position: absolute;
-      top: calc(100% + 20px);
+      top: calc(50% - 150px);
       left: 50%;
-      transform: translateX(-50%);
-      background-color: #ffffff;
+      transform: translate(-50%, -50%);
+      background-color: #4287f5;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
       z-index: 999;
       font-size: 24px;
       animation: fade-in 0.5s ease-in-out;
+      color: white;
     }
 
     .popup.active {
@@ -85,7 +86,8 @@
       top: 10px;
       right: 10px;
       cursor: pointer;
-      font-size: 20px;
+      font-size: 24px;
+      color: white;
     }
 
     .contact {
@@ -163,8 +165,8 @@
     <div id="popup" class="popup">
       <span class="close" onclick="togglePopup()">X</span>
       <p>All I ever wanted to say was:</p>
-      <p>I ... you</p>
-      <p>...</p>
+      <p>I .... you</p>
+      <p>....</p>
     </div>
   </div>
 

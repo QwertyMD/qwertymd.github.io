@@ -5,8 +5,8 @@
   <link rel="shortcut icon" type="image/png" href="https://avatarfiles.alphacoders.com/152/152286.jpg">
   <style>
     body {
-      background-color: #000721;
-      background-image: url("https://www.transparenttextures.com/patterns/light-honeycomb-dark.png");
+      background-color: #00238c;
+      background-image: url("https://www.transparenttextures.com/patterns/gray-floral.png");
       color: #2a90b3;
       font-family: Arial, sans-serif;
       font-size: 18px;
@@ -34,10 +34,11 @@
 
     .quote {
       color: #2587be;
-      font-size: 24px;
+      font-size: 30px;
       margin-bottom: 40px;
       font-style: italic;
       animation: slide-in 1s ease-out;
+      position: relative;
     }
 
     .btn-click-me {
@@ -48,28 +49,31 @@
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px;
+      font-size: 20px;
       margin-top: 20px;
       cursor: pointer;
-      border-radius: 5px;
+      border-radius: 25px;
       transition: all 0.3s ease;
     }
 
     .btn-click-me:hover {
       background-color: #2596be;
+      transform: scale(1.1);
     }
 
     .popup {
       display: none;
-      position: fixed;
-      top: 50%;
+      position: absolute;
+      top: calc(100% + 20px);
       left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #fff;
+      transform: translateX(-50%);
+      background-color: #ffffff;
       padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
       z-index: 999;
+      font-size: 24px;
+      animation: fade-in 0.5s ease-in-out;
     }
 
     .popup.active {
@@ -81,6 +85,7 @@
       top: 10px;
       right: 10px;
       cursor: pointer;
+      font-size: 20px;
     }
 
     @keyframes fade-in {

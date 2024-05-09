@@ -1,6 +1,6 @@
 body {
-    background-color: #004f8c;
-    background-image: url("https://www.transparenttextures.com/patterns/wild-flowers.png");
+    background-color: #141414;
+    background-image: url("https://transparenttextures.com/patterns/asfalt-light.png");
     color: white;
     font-family: Arial, sans-serif;
     font-size: 18px;
@@ -65,9 +65,9 @@ h1 {
 .popup {
     display: none;
     position: absolute;
-    top: calc(100% + 10px);
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     background-color: #50c0e9;
     padding: 20px;
     border-radius: 10px;

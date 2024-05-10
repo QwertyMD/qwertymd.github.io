@@ -1,142 +1,34 @@
 <!DOCTYPE html>
-<html>
 <head>
-  <title>Welcome</title>
-  <link rel="shortcut icon" type="image/png" href="https://avatarfiles.alphacoders.com/152/152286.jpg" />
-  <style>
-    body {
-      background-color: #004f8c;
-      background-image: url("https://www.transparenttextures.com/patterns/wild-flowers.png"), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23d4d4d4'/%3E%3C/svg%3E");
-      background-repeat: repeat, no-repeat;
-      background-size: auto, cover;
-      color: white;
-      font-family: Arial, sans-serif;
-      font-size: 18px;
-      line-height: 1.5;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-      position: relative;
-      animation: fade-in 1s ease-out;
-    }
-
-    h1 {
-      color: #2596be;
-      font-size: 48px;
-      margin-bottom: 20px;
-      animation: scale-in 1s ease-out;
-    }
-
-    .p1 {
-      color: #25a5be;
-      font-size: 24px;
-      margin-bottom: 20px;
-      font-style: italic;
-      font-weight: bold;
-      animation: scale-in 1s ease-out;
-    }
-
-    .p2 {
-      color: #2587be;
-      font-size: 24px;
-      margin-bottom: 40px;
-      font-style: italic;
-      animation: slide-in 1s ease-out;
-    }
-
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      padding-top: 30px;
-      height: 0;
-      overflow: hidden;
-      margin-top: 40px;
-      animation: fade-in 1s ease-out;
-    }
-
-    .contact {
-      position: absolute;
-      top: 20px;
-      animation: fade-in 1s ease-out;
-    }
-
-    .contact-left {
-      left: 20px;
-    }
-
-    .contact-right {
-      right: 20px;
-    }
-
-    .contact a {
-      display: inline-block;
-      margin-top: 10px;
-      margin-left: 10px;
-      padding: 10px;
-      border: 1px solid #50c0e9;
-      border-radius: 5px;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      color: #50c0e9;
-    }
-
-    .contact a:first-child {
-      margin-left: 0;
-    }
-
-    .contact a:hover {
-      transform: scale(1.2);
-    }
-
-    @keyframes fade-in {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    @keyframes scale-in {
-      from {
-        transform: scale(0);
-      }
-      to {
-        transform: scale(1);
-      }
-    }
-
-    @keyframes slide-in {
-      from {
-        transform: translateY(100%);
-      }
-      to {
-        transform: translateY(0);
-      }
-    }
-  </style>
+    <title>Welcome</title>
+    <link rel="shortcut icon" type="image/png" href="https://avatarfiles.alphacoders.com/152/152286.jpg">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="contact contact-left">
-      <a class="link" href="https://www.facebook.com/profile.php?id=100004187504968" target="_blank">My Facebook</a>
+    <div class="container">
+        <div class="contact contact-left">
+            <a class="link" href="https://www.facebook.com/profile.php?id=100004187504968" target="_blank">Facebook</a>
+        </div>
+        <div class="contact contact-right">
+            <a class="link" href="https://github.com/QwertyMD" target="_blank">Github</a>
+        </div>
+        <h1>Hello There!</h1>
+        <h1>I'm Aaryan Dhakal</h1>
+        <p class="p1">Currently a high school student with deep interest in computers.</p>
+        <p class="quote">"If you're always trying to be normal you'll never know how amazing you can be."</p>
+        <button class="btn-click-me" onclick="togglePopup()">Click Me</button>
+        <div id="popup" class="popup">
+            <span class="close" onclick="togglePopup()">X</span>
+            <p>Tell me, where shall I go?</p>
+            <p>To the left, where nothing is right?</p>
+            <p>Or to the right, where nothing is left?</p>
+        </div>
     </div>
-    <div class="contact contact-right">
-      <a class="link" href="https://github.com/QwertyMD" target="_blank">My Github</a>
-    </div>
-    <h1>Hey There 👋</h1>
-    <h1>I'm Aaryan Dhakal</h1>
-    <p class="p1">Currently a high school student with deep interest in Computers.</p>
-    <p class="p2">"One day... or DAY 1. You make the decision." -Someone</p>
-    <div class="video-container">
-      <iframe allowfullscreen="" class="BLOG_video_class" height="450" src="https://www.youtube.com/embed/F1-3PshgtxY" width="800" youtube-src-id="F1-3PshgtxY"></iframe>
-    </div>
-  </div>
+    <script>
+        function togglePopup() {
+            var popup = document.getElementById("popup");
+            popup.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>

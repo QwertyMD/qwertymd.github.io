@@ -1,8 +1,6 @@
 body {
   background-color: #141414;
   background-image: url("https://transparenttextures.com/patterns/asfalt-light.png");
-  color: white;
-  font-family: Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
   margin: 0;
@@ -18,10 +16,6 @@ body {
   animation: fade-in 1s ease-out;
 }
 
-h1, .p1, .quote, .contact a {
-  color: white;
-}
-
 h1 {
   font-size: 48px;
   margin-bottom: 20px;
@@ -31,7 +25,6 @@ h1 {
 .p1 {
   font-size: 30px;
   margin-bottom: 20px;
-  font-style: italic;
   animation: scale-in 1s ease-out;
 }
 
@@ -44,12 +37,11 @@ h1 {
 
 .btn-click-me {
   background-color: #141414;
-  color: white;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 20px;
+  font-style: italic;
   margin-top: 20px;
   cursor: pointer;
   border: 1px solid white;
@@ -76,7 +68,6 @@ h1 {
   z-index: 999;
   font-size: 24px;
   animation: fade-in 0.5s ease-in-out;
-  color: white;
   white-space: nowrap;
 }
 
@@ -90,7 +81,6 @@ h1 {
   right: 10px;
   cursor: pointer;
   font-size: 24px;
-  color: white;
 }
 
 .contact {
@@ -114,8 +104,6 @@ h1 {
   border: 1px solid white;
   border-radius: 5px;
   transition: all 0.3s ease;
-  text-decoration: none;
-  color: white;
 }
 
 .contact a:first-child {

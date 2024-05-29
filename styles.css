@@ -17,6 +17,10 @@ body {
   animation: fade-in 1s ease-out;
 }
 
+h1, .p1, .quote, .btn, .contact a, .popup, .close {
+  color: white;
+}
+
 h1 {
   font-size: 48px;
   margin-bottom: 20px;
@@ -36,7 +40,7 @@ h1 {
   animation: slide-in 1s ease-out;
 }
 
-.btn-click-me {
+.btn {
   background-color: #141414;
   padding: 15px 32px;
   text-align: center;
@@ -49,7 +53,7 @@ h1 {
   transition: all 0.3s ease;
 }
 
-.btn-click-me:hover {
+.btn:hover {
   background-color: #141414;
   transform: scale(1.1);
 }

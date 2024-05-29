@@ -30,6 +30,7 @@ h1 {
 .p1 {
   font-size: 30px;
   margin-bottom: 20px;
+  font-weight: bold;
   animation: scale-in 1s ease-out;
 }
 

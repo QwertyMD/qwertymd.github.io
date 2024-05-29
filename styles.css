@@ -17,7 +17,7 @@ body {
   animation: fade-in 1s ease-out;
 }
 
-h1, .p1, .quote, .btn, .contact a, .popup, .close {
+h1, .p1, .p2, .quote, .btn, .popup, .close, .contact a {
   color: white;
 }
 
@@ -28,6 +28,11 @@ h1 {
 }
 
 .p1 {
+  font-size: 30px;
+  animation: scale-in 1s ease-out;
+}
+
+.p2 {
   font-size: 30px;
   margin-bottom: 20px;
   animation: scale-in 1s ease-out;

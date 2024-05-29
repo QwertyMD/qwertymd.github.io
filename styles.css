@@ -1,6 +1,7 @@
 body {
   background-color: #141414;
   background-image: url("https://transparenttextures.com/patterns/asfalt-light.png");
+  color: white;
   font-size: 18px;
   line-height: 1.5;
   margin: 0;
@@ -41,7 +42,6 @@ h1 {
   text-align: center;
   display: inline-block;
   font-size: 20px;
-  font-style: italic;
   margin-top: 20px;
   cursor: pointer;
   border: 1px solid white;
@@ -67,6 +67,7 @@ h1 {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   z-index: 999;
   font-size: 24px;
+  font-style: italic;
   animation: fade-in 0.5s ease-in-out;
   white-space: nowrap;
 }
